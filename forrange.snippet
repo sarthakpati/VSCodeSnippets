@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>forrange</Title>
+			<Shortcut>forrange</Shortcut>
+			<Description>Code snippet for range-based 'for' loop</Description>
+			<Author>Sarthak Pati</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<Default>const auto</Default>
+					<ToolTip>Control variable type</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>index</ID>
+					<Default>it</Default>
+					<ToolTip>Index</ToolTip>
+				</Literal>
+				<Literal>
+					<ID>max</ID>
+					<Default>container</Default>
+					<ToolTip>Container to loop through</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp"><![CDATA[for ($type$ & $index$ : container)
+		{
+			$selected$ $end$
+		}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
